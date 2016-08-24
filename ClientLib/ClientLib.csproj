@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HtmlControlExtensions.cs" />
     <Compile Include="StepsUtility.cs" />
     <Compile Include="IStep.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

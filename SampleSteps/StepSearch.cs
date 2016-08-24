@@ -7,7 +7,7 @@ namespace SampleSteps
     {
         public void Execute(WebBrowserComponent browser, StepCommand command)
         {
-            browser.Select("[btnG]",0,"name").ClickLink_HTMLCtrl();
+            browser.Select("[btnG]", 0, "name").ClickLink_HTMLCtrl();
         }
     }
 }

@@ -75,9 +75,6 @@ namespace ClientLib
             instance?.Execute(browser, command);
         }
 
-        private WebBrowserComponent Browser {  get; }
-
-      
-
+        private WebBrowserComponent Browser { get; }
     }
 }

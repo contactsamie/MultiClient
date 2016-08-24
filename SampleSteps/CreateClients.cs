@@ -11,7 +11,8 @@ namespace SampleSteps
     public class CreateClients : IStep
     {
         public void Execute(WebBrowserComponent browser, StepCommand command)
-        {    var myAppPath = Directory.GetCurrentDirectory();
+        {
+            var myAppPath = Directory.GetCurrentDirectory();
             Parallel.ForEach(Enumerable.Range(0, Convert.ToInt32(command.Arguments.First())),
                 (s) => Process.Start(new ProcessStartInfo
                 {

@@ -1,6 +1,5 @@
 ﻿using ClientLib;
 using System;
-using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -13,14 +12,16 @@ namespace OneClient
             InitializeComponent();
         }
 
-      //  private readonly string _communicationPath = System.Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\oneclient";
+        //  private readonly string _communicationPath = System.Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\oneclient";
         public string Url { set; get; }
+
         public string PersonName { get; set; }
         private StepRunner Runner { get; set; }
+
         private void Form2_Load(object sender, EventArgs e)
         {
             Runner = new StepRunner(this, null);
-          
+
             fileSystemWatcher1.Path = Runner.CommPath;
             fileSystemWatcher1.EnableRaisingEvents = true;
 

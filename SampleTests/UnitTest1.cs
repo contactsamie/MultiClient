@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using AutomatorLib;
-using ClientLib;
+﻿using ClientLib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SampleSteps;
 
@@ -12,11 +9,9 @@ namespace SampleTests
     {
         private StepRunner Runner { set; get; }
 
-
-        
         public UnitTest1()
         {
-            Runner=new StepRunner();
+            Runner = new StepRunner();
         }
 
         [TestMethod]
@@ -24,11 +19,13 @@ namespace SampleTests
         {
             Runner.Run(1);
         }
+
         [TestMethod]
         public void Navigate()
         {
-            Runner.Navigate("www.google.com"); 
+            Runner.Navigate("www.google.com");
         }
+
         [TestMethod]
         public void Refresh()
         {

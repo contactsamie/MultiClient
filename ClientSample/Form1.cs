@@ -17,14 +17,12 @@ namespace ClientSample
             Processes = new List<Process>();
         }
 
-
         public List<Process> Processes { get; set; }
         public List<WebBrowserComponent> Browsers { get; set; }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             Browsers = new List<WebBrowserComponent>();
-          
         }
 
         private readonly StepRunner _stepRunner = new StepRunner();
@@ -63,7 +61,6 @@ namespace ClientSample
         private void button2_Click(object sender, EventArgs e)
         {
             new CreateClients().Execute(null, new StepCommand() { Arguments = new List<string>() { textBox3.Text } });
-
         }
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -93,9 +90,8 @@ namespace ClientSample
         {
             _stepRunner.RequestStep<StepFillSearchForm>(new StepCommand()
             {
-                Arguments = new List<string>() { textBox4.Text}
+                Arguments = new List<string>() { textBox4.Text }
             });
-
         }
 
         private void button5_Click(object sender, EventArgs e)

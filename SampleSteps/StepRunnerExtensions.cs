@@ -1,12 +1,12 @@
-using System.Collections.Generic;
 using AutomatorLib;
 using ClientLib;
+using System.Collections.Generic;
 
 namespace SampleSteps
 {
     public static class StepRunnerExtensions
     {
-        public static void Run(this StepRunner runner,int numberOfClients)
+        public static void Run(this StepRunner runner, int numberOfClients)
         {
             new CreateClients().Execute(null, new StepCommand() { Arguments = new List<string>() { numberOfClients.ToString() } });
         }
@@ -21,7 +21,6 @@ namespace SampleSteps
             runner.RequestStep<Refresh>();
         }
 
-
         public static void Multiply(this StepRunner runner, int numberOfClients)
         {
             runner.RequestStep<CreateClients>(new StepCommand() { Arguments = new List<string>() { numberOfClients.ToString() } });
@@ -31,6 +30,5 @@ namespace SampleSteps
         {
             runner.RequestStep<StepDie>();
         }
-
     }
 }
