@@ -63,6 +63,16 @@ namespace ClientSample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ball_md {
+            get {
+                object obj = ResourceManager.GetObject("ball-md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap coffee_mug {
             get {
                 object obj = ResourceManager.GetObject("coffee-mug", resourceCulture);
@@ -86,6 +96,16 @@ namespace ClientSample.Properties {
         internal static System.Drawing.Bitmap metal_badge_psd_426460 {
             get {
                 object obj = ResourceManager.GetObject("metal-badge-psd-426460", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mmmmmm {
+            get {
+                object obj = ResourceManager.GetObject("mmmmmm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

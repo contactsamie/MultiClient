@@ -88,5 +88,19 @@ namespace ClientSample
         {
             this.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            _stepRunner.RequestStep<StepFillSearchForm>(new StepCommand()
+            {
+                Arguments = new List<string>() { textBox4.Text}
+            });
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            _stepRunner.RequestStep<StepSearch>();
+        }
     }
 }

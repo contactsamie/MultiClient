@@ -45,8 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Refresh.cs" />
     <Compile Include="StepDie.cs" />
+    <Compile Include="StepFillSearchForm.cs" />
     <Compile Include="StepNavigate.cs" />
     <Compile Include="StepRunnerExtensions.cs" />
+    <Compile Include="StepSearch.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClientLib\ClientLib.csproj">
