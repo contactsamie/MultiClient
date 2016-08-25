@@ -1,6 +1,9 @@
 ﻿using ClientLib;
 using System;
+using System.Net;
+using System.Net.Security;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 
 namespace OneClient
@@ -17,7 +20,7 @@ namespace OneClient
 
         public string PersonName { get; set; }
         private StepRunner Runner { get; set; }
-
+     
         private void Form2_Load(object sender, EventArgs e)
         {
             Runner = new StepRunner(this, null);
@@ -27,6 +30,7 @@ namespace OneClient
 
             this.Controls.Add(this.WebBrowserInterface);
             this.WebBrowserInterface.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
+         
         }
 
         private void button1_Click(object sender, EventArgs e)
