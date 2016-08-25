@@ -35,6 +35,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClientLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MultiClient.0.0.1\lib\ClientLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OneClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MultiClient.0.0.1\lib\OneClient.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SampleSteps, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MultiClient.0.0.1\lib\SampleSteps.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
@@ -51,22 +67,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="StepExample.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClientLib\ClientLib.csproj">
-      <Project>{9769ef37-0a9c-494d-9325-e19d227773eb}</Project>
-      <Name>ClientLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OneClient\OneClient.csproj">
-      <Project>{9f6fbd1c-1616-41db-8d0c-b1da39d1affc}</Project>
-      <Name>OneClient</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SampleSteps\SampleSteps.csproj">
-      <Project>{A751C0DF-55D4-4DA9-B1A6-68EB5AA52208}</Project>
-      <Name>SampleSteps</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -1,4 +1,6 @@
-﻿using ClientLib;
+﻿using System.Collections.Generic;
+using AutomatorLib;
+using ClientLib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SampleSteps;
 
@@ -42,6 +44,18 @@ namespace SampleTests
         public void KillAll()
         {
             Runner.TerminateAll();
+        }
+
+        [TestMethod]
+        public void Example()
+        {
+            Runner.RequestStep<StepExample>(new StepCommand()
+            {
+                Arguments = new List<string>()
+                {
+                    "www.google.com"
+                }
+            });
         }
     }
 }
