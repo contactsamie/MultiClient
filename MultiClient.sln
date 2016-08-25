@@ -13,10 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleSteps", "SampleSteps\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTests", "SampleTests\SampleTests.csproj", "{22C3457E-E00A-455E-83AF-2C20403D9391}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiClient", "LEAP\MultiClient\MultiClient.csproj", "{FE2F8DF6-9A56-42D9-8556-591A4B21F0FA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepsLib", "LEAP\StepsLib\StepsLib.csproj", "{84211AD0-9BF4-4AC2-BCA2-B2C23C4E550D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,14 +39,6 @@ Global
 		{22C3457E-E00A-455E-83AF-2C20403D9391}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22C3457E-E00A-455E-83AF-2C20403D9391}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22C3457E-E00A-455E-83AF-2C20403D9391}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE2F8DF6-9A56-42D9-8556-591A4B21F0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE2F8DF6-9A56-42D9-8556-591A4B21F0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE2F8DF6-9A56-42D9-8556-591A4B21F0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE2F8DF6-9A56-42D9-8556-591A4B21F0FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{84211AD0-9BF4-4AC2-BCA2-B2C23C4E550D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84211AD0-9BF4-4AC2-BCA2-B2C23C4E550D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84211AD0-9BF4-4AC2-BCA2-B2C23C4E550D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84211AD0-9BF4-4AC2-BCA2-B2C23C4E550D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
