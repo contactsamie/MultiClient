@@ -1,14 +1,22 @@
+using System.Net;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 
 namespace ClientLib
 {
     public class WebBrowserComponent : Form
     {
-        public System.Windows.Forms.WebBrowser WebBrowserInterface;
+        public static bool ValidateServerCertificate(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
+        {
+            return true;
+        }
+
+        public UnSecuredWebBrowser WebBrowserInterface;
 
         public WebBrowserComponent()
         {
-            this.WebBrowserInterface = new System.Windows.Forms.WebBrowser
+            this.WebBrowserInterface = new UnSecuredWebBrowser
             {
                 Anchor =
                     ((System.Windows.Forms.AnchorStyles)
@@ -22,6 +30,8 @@ namespace ClientLib
                 Size = new System.Drawing.Size(312, 445),
                 TabIndex = 0
             };
+
+            ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(ValidateServerCertificate);
         }
     }
 }
