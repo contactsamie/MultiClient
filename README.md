@@ -25,13 +25,13 @@ Kage bunshin no jutsu
         [TestMethod]
         public void Multiply()
         {
-            Runner.Multiply(2); // Kage bunshin no jutsu
+            Runner.Multiply(2); // Kage bunshin no jutsu 影分身の術 
         }
 
         [TestMethod]
         public void KillAll()
         {
-            Runner.TerminateAll();// Super tailed beast rasenshuriken 
+            Runner.TerminateAll();// Super tailed beast Rasenshuriken 風遁・螺旋手裏剣 
         }
 
         [TestMethod]
