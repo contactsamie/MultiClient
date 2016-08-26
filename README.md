@@ -19,7 +19,7 @@ Kage bunshin no jutsu
         [TestMethod]
         public void Refresh()
         {
-            Runner.Refresh();
+            Runner.Refresh(); // Chidori 羽撃く千鳥
         }
 
         [TestMethod]
