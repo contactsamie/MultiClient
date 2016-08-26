@@ -47,6 +47,6 @@ Kage bunshin no jutsu
         }
 
 
-growiing milestones
+Milestones
 
 https://github.com/contactsamie/MultiClient/milestones
