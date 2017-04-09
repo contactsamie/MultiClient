@@ -1,0 +1,5 @@
+source https://api.nuget.org/v3/index.json
+framework >= net452
+
+nuget MultiClient 0.0.2
+nuget Newtonsoft.Json 9.0.1
