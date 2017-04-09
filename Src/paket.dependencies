@@ -1,0 +1,4 @@
+source https://api.nuget.org/v3/index.json
+framework >= net452
+
+nuget Newtonsoft.Json 9.0.1
