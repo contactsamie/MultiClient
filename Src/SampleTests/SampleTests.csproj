@@ -35,20 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ClientLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MultiClient.0.0.1\lib\ClientLib.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="OneClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MultiClient.0.0.1\lib\OneClient.exe</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SampleSteps, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MultiClient.0.0.1\lib\SampleSteps.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -73,6 +61,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClientLib\ClientLib.csproj">
+      <Project>{9769EF37-0A9C-494D-9325-E19D227773EB}</Project>
+      <Name>ClientLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OneClient\OneClient.csproj">
+      <Project>{9f6fbd1c-1616-41db-8d0c-b1da39d1affc}</Project>
+      <Name>OneClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SampleSteps\SampleSteps.csproj">
+      <Project>{a751c0df-55d4-4da9-b1a6-68eb5aa52208}</Project>
+      <Name>SampleSteps</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

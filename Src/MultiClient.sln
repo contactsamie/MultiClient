@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleSteps", "SampleSteps\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTests", "SampleTests\SampleTests.csproj", "{22C3457E-E00A-455E-83AF-2C20403D9391}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QA", "QA", "{B0AD0C31-D7E3-4AAE-B7C3-4A77E66D3C4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6171FDC8-6A0D-4E1B-8C03-57CBD074C0DC} = {B0AD0C31-D7E3-4AAE-B7C3-4A77E66D3C4E}
+		{22C3457E-E00A-455E-83AF-2C20403D9391} = {B0AD0C31-D7E3-4AAE-B7C3-4A77E66D3C4E}
 	EndGlobalSection
 EndGlobal
