@@ -11,9 +11,9 @@ Kage bunshin no jutsu
 
 
         type StepExample() = 
-     interface IStep  with 
-      member this.Execute(browser, command) = 
-        browser.WebBrowserInterface.Navigate command.Arguments.[0]
+         interface IStep  with 
+           member this.Execute(browser, command) = 
+            browser.WebBrowserInterface.Navigate command.Arguments.[0]
 
 
         [<EntryPoint>]
