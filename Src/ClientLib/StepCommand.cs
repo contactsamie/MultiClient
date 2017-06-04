@@ -8,10 +8,10 @@ namespace AutomatorLib
     {
         public StepCommand(params string[] args)
         {
-            Arguments = args.Length > 0 ? args.ToList() : new List<string>();
+            Arguments = args?.ToList() ?? new List<string>();
         }
-
         public List<string> Arguments { set; get; }
-        public Type StepType { get; set; }
+        public Type ArgumentType { set; get; }
+        public Type StepType { set; get; }
     }
 }

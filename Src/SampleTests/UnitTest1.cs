@@ -1,8 +1,8 @@
-﻿using AutomatorLib;
+﻿using System.Collections.Generic;
+using AutomatorLib;
 using ClientLib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SampleSteps;
-using System.Collections.Generic;
 
 namespace SampleTests
 {

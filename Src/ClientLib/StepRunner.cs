@@ -43,6 +43,20 @@ namespace ClientLib
         public string CommFile { get; }
         public string CommunicationFile { get; }
 
+
+        public void RequestStep<T>(params string[] args)
+        {
+            try
+            {
+                var command = new StepCommand(args) { StepType = typeof(T) };
+                var instruction = JsonConvert.SerializeObject(command, Formatting.Indented);
+                System.IO.File.WriteAllText(CommunicationFile, instruction);
+            }
+            catch (Exception)
+            {
+            }
+        }
+
         public void RequestStep<T>(StepCommand command = null)
         {
             try
@@ -56,22 +70,6 @@ namespace ClientLib
             {
             }
         }
-
-        public void RequestStep<T>(params string[] arg)
-        {
-            try
-            {
-                var command = new StepCommand(arg);
-                command.StepType = typeof(T);
-                var instruction = JsonConvert.SerializeObject(command, Formatting.Indented);
-                System.IO.File.WriteAllText(CommunicationFile, instruction);
-            }
-            catch (Exception)
-            {
-            }
-        }
-
-        // public Type StepType { get; set; }
 
         public void ExecuteStep()
         {
