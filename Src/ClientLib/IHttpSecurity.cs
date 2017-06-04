@@ -15,6 +15,7 @@ namespace ClientLib
         int GetWindow(
             [In] ref Guid rguidReason,
             [In, Out] ref IntPtr phwnd);
+
         [PreserveSig]
         int OnSecurityProblem(
             [In, MarshalAs(UnmanagedType.U4)] uint dwProblem);

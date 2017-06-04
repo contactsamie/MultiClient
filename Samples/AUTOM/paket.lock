@@ -1,6 +1,9 @@
 FRAMEWORK: >= NET452
 NUGET
   remote: https://api.nuget.org/v3/index.json
-    MultiClient (0.0.2)
+    MSTest.TestAdapter (1.1.11)
+    MSTest.TestFramework (1.1.11)
+    MultiClient (0.0.4)
       Newtonsoft.Json (>= 9.0.1)
     Newtonsoft.Json (9.0.1)
+    System.ValueTuple (4.3)

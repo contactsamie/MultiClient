@@ -1,6 +1,6 @@
-﻿using System.Linq;
-using AutomatorLib;
+﻿using AutomatorLib;
 using ClientLib;
+using System.Linq;
 
 namespace SampleTests
 {

@@ -52,7 +52,8 @@ namespace ClientLib
                                 el.GetAttribute(attr) == raw).Take(eq + 1));
                     element = result[eq];
                 }
-            }else
+            }
+            else
             {
                 element = (browser?.WebBrowserInterface?.Document?.GetElementsByTagName(raw)?[eq].DomElement);
             }

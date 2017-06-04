@@ -1,10 +1,12 @@
-﻿using AutomatorLib;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using AutomatorLib;
 using ClientLib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SampleSteps;
-using System.Collections.Generic;
 
-namespace SampleTests
+namespace AUTOM
 {
     [TestClass]
     public class UnitTest1
@@ -56,6 +58,13 @@ namespace SampleTests
                     "www.google.com"
                 }
             });
+        }
+    }
+    public class StepExample : IStep
+    {
+        public void Execute(WebBrowserComponent browser, StepCommand command)
+        {
+            browser.WebBrowserInterface.Navigate(command.Arguments.First());
         }
     }
 }

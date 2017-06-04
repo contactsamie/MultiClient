@@ -1,4 +1,4 @@
-﻿namespace WebControl.AssemblyInfo
+﻿namespace AUTOM_FSHARP.AssemblyInfo
 
 open System.Reflection
 open System.Runtime.CompilerServices
@@ -7,11 +7,11 @@ open System.Runtime.InteropServices
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[<assembly: AssemblyTitle("WebControl")>]
+[<assembly: AssemblyTitle("AUTOM-FSHARP")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("")>]
-[<assembly: AssemblyProduct("WebControl")>]
+[<assembly: AssemblyProduct("AUTOM-FSHARP")>]
 [<assembly: AssemblyCopyright("Copyright ©  2017")>]
 [<assembly: AssemblyTrademark("")>]
 [<assembly: AssemblyCulture("")>]
@@ -22,7 +22,7 @@ open System.Runtime.InteropServices
 [<assembly: ComVisible(false)>]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[<assembly: Guid("e68e4936-4d1e-45f6-b5c9-a47fe49a44c1")>]
+[<assembly: Guid("2cfbca92-7f54-4d91-b579-51da4a470435")>]
 
 // Version information for an assembly consists of the following four values:
 // 
